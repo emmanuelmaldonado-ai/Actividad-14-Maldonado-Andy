@@ -1,8 +1,8 @@
-﻿// triángulo creciente de 5 filas con asteriscos.
+﻿// triángulo invertido de 5 filas.
 
-for (int fila =0; fila < 5; fila++)
+for (int fila =5; fila > 0; fila--)
 {
-    for(int col = 0; col <= fila; col++)
+    for(int col = 0; col < fila; col++)
     {
         Console.Write("* ");
     }
