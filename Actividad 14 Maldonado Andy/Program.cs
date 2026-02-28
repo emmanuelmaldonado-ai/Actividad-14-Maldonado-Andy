@@ -1,9 +1,10 @@
-﻿// combinaciones posibles de números del 1 al 3 (ejemplo: 1-1, 1-2...)
+﻿// tabla donde las filas sean del 1 al 4 y las columnas del 1 al 4.
 
-for (int i =1; i <=3; i++)
+for (int i =1; i <=4; i++)
 {
-    for(int j =0; j <= 3; j++)
+    for(int j =1; j <= 4; j++)
     {
-        Console.WriteLine($"{i}-{j}");
+        Console.Write(j);
     }
+    Console.WriteLine();
 }
