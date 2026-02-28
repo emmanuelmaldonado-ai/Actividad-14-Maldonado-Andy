@@ -1,10 +1,10 @@
-﻿// triángulo invertido de 5 filas.
+﻿// tabla de multiplicar del 1 al 5 (todas juntas).
 
-for (int fila =5; fila > 0; fila--)
+for(int tabla =1; tabla <=5; tabla++)
 {
-    for(int col = 0; col < fila; col++)
+    for(int i = 1; i <= 10; i++)
     {
-        Console.Write("* ");
+        Console.WriteLine($"{tabla}x{i} = {tabla * i} ");
     }
     Console.WriteLine();
 }
