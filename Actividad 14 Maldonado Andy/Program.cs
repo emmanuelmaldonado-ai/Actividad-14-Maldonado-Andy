@@ -1,10 +1,12 @@
-﻿// tabla de multiplicar del 1 al 5 (todas juntas).
+﻿//matriz 3x3 con números consecutivos del 1 al 9.
 
-for(int tabla =1; tabla <=5; tabla++)
+int num = 1;
+for (int i =1; i <=3; i++)
 {
-    for(int i = 1; i <= 10; i++)
+    for(int j =0; j < 3; j++)
     {
-        Console.WriteLine($"{tabla}x{i} = {tabla * i} ");
+        Console.Write($"{num}");
+        num++;
     }
     Console.WriteLine();
 }
