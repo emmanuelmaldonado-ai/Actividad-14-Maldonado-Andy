@@ -1,10 +1,10 @@
-﻿// tabla donde las filas sean del 1 al 4 y las columnas del 1 al 4.
+﻿// patrón donde cada fila tenga el número de la fila repetido.
 
 for (int i =1; i <=4; i++)
 {
     for(int j =1; j <= 4; j++)
     {
-        Console.Write(j);
+        Console.Write(i);
     }
     Console.WriteLine();
 }
