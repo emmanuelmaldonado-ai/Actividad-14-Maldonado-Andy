@@ -1,8 +1,8 @@
-﻿// rectángulo de 4 filas y 6 columnas con asteriscos.
+﻿// triángulo creciente de 5 filas con asteriscos.
 
-for (int fila =0; fila < 4; fila++)
+for (int fila =0; fila < 5; fila++)
 {
-    for(int col = 0; col < 6; col++)
+    for(int col = 0; col <= fila; col++)
     {
         Console.Write("* ");
     }
