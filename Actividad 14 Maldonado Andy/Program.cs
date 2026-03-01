@@ -1,14 +1,22 @@
-﻿// Mostrar un patrón numérico como:
-//1
-//22
-//333
-//4444
+﻿// Simular un menú que se repita hasta que el usuario elija salir.
 
-for (int i =1; i <=8; i++)
+int opcion = 0;
+while (opcion != 3)
 {
-    for(int j =1; j <= i; j++)
+    Console.WriteLine("Elegir: 1 para saludar, 2 para despedirse o 3 para salir");
+    opcion = int.Parse(Console.ReadLine());
+
+    switch (opcion)
     {
-        Console.Write($"{i}");
+        case 1:
+            Console.WriteLine("Hola, saludos estimado");
+                break;
+        case 2:
+            Console.WriteLine("Adios, nos vemos pronto");
+            break;
+        case 3:
+        default:
+            Console.WriteLine("saliendo...");
+            break;
     }
-    Console.WriteLine();
 }
