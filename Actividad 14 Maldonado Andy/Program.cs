@@ -1,10 +1,11 @@
-﻿// Sumar los números del 1 al 100.
+﻿//Pedir números hasta que el usuario ingrese 0.
 
-int i =1;
-int suma = 0;
-while (i <= 100)
+Console.WriteLine("Ingrese un número");
+int num = int.Parse(Console.ReadLine());
+
+while(num != 0)
 {
-    suma += i;
-    i ++;
+    Console.WriteLine($"Ingresó{num}");
+    Console.WriteLine("ingresar un numero");
+    num = int.Parse(Console.ReadLine());
 }
-Console.WriteLine(suma);
