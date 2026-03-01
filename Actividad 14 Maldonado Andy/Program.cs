@@ -1,14 +1,11 @@
-﻿// Sumar números ingresados hasta que el total supere 100.
+﻿// Pedir una contraseña hasta que sea correcta
 
-Console.WriteLine("Ingrese un número");
-int num = int.Parse(Console.ReadLine());
-int suma = 0;
-suma += num;
+string correcta = "123456";
+string contra = "";
 
-while(suma <= 100)
+while(contra != correcta)
 {
-    Console.WriteLine("Ingrese un número");
-    num = int.Parse(Console.ReadLine());
-    suma += num;
+    Console.WriteLine("Intente su contraseña (123456) ");
+    contra = Console.ReadLine();
 }
-Console.WriteLine($"Se ha sumerado a 100 con {suma}");
+Console.WriteLine("Contraseña correcta");
