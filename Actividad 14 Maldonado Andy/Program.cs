@@ -1,13 +1,14 @@
-﻿// Contar cuántos dígitos tiene un número.
+﻿// Sumar números ingresados hasta que el total supere 100.
 
 Console.WriteLine("Ingrese un número");
 int num = int.Parse(Console.ReadLine());
-int digito = 0;
-int i = num;
+int suma = 0;
+suma += num;
 
-while(i > 0)
+while(suma <= 100)
 {
-    i /= 10;
-    digito ++;
+    Console.WriteLine("Ingrese un número");
+    num = int.Parse(Console.ReadLine());
+    suma += num;
 }
-Console.WriteLine($"Tiene {digito } digitos");
+Console.WriteLine($"Se ha sumerado a 100 con {suma}");
