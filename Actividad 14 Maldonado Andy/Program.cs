@@ -1,14 +1,8 @@
-﻿// Mostrar un patrón numérico como:
-//1
-//22
-//333
-//4444
+﻿// Mostrar los números del 1 al 10.
 
-for (int i =1; i <=8; i++)
+int i =1;
+while(i <= 10)
 {
-    for(int j =1; j <= i; j++)
-    {
-        Console.Write($"{i}");
-    }
-    Console.WriteLine();
+    Console.WriteLine(i);
+    i++;
 }
