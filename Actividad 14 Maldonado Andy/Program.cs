@@ -1,8 +1,22 @@
-﻿// secuencia que aumente de 5 en 5 hasta 100.
+﻿// Simular un menú que se repita hasta que el usuario elija salir.
 
-int i = 5;
-while (i <= 100)
+int opcion = 0;
+while (opcion != 3)
 {
-    Console.WriteLine(i);
-    i += 5;
+    Console.WriteLine("Elegir: 1 para saludar, 2 para despedirse o 3 para salir");
+    opcion = int.Parse(Console.ReadLine());
+
+    switch (opcion)
+    {
+        case 1:
+            Console.WriteLine("Hola, saludos estimado");
+                break;
+        case 2:
+            Console.WriteLine("Adios, nos vemos pronto");
+            break;
+        case 3:
+        default:
+            Console.WriteLine("saliendo...");
+            break;
+    }
 }
