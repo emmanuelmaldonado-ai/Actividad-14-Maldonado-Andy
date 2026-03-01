@@ -1,15 +1,13 @@
-﻿// Contar cuántos números positivos ingresa el usuario.
+﻿// Calcular el factorial de un número ingresado.
 
-//ingrese 0 para salir o terminar
-int num = 1;
-int posi = 0;
-while(num != 0)
+Console.WriteLine("Ingrese un número");
+int num = int.Parse(Console.ReadLine());
+int fact = 1;
+int i = 1;
+
+while(i <= num)
 {
-    Console.WriteLine("Ingrese un número");
-    num = int.Parse(Console.ReadLine());
-    if(num > 0)
-    {
-        posi++;
-    }
+    fact *= i;
+    i++;
 }
-Console.WriteLine($"ingresó {posi} números positivos");
+Console.WriteLine($"El factorial de {num} es {fact}");
