@@ -1,8 +1,10 @@
-﻿// Mostrar los números impares del 1 al 20.
+﻿// Sumar los números del 1 al 100.
 
 int i =1;
-while (i <= 20)
+int suma = 0;
+while (i <= 100)
 {
-    Console.WriteLine(i);
-    i += 2;
+    suma += i;
+    i ++;
 }
+Console.WriteLine(suma);
