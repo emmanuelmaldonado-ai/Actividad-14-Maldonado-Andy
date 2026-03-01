@@ -1,8 +1,7 @@
-﻿// Mostrar los números del 10 al 1.
-
-int i =10;
-while(i >= 1)
+﻿// Mostrar los números pares del 1 al 20.
+int i =2;
+while(i <= 20)
 {
     Console.WriteLine(i);
-    i--;
+    i += 2;
 }
