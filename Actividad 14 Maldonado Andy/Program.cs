@@ -1,11 +1,8 @@
-﻿// Pedir una contraseña hasta que sea correcta
+﻿// Mostrar los múltiplos de 3 menores a 50.
 
-string correcta = "123456";
-string contra = "";
-
-while(contra != correcta)
+int i = 3;
+while (i < 50)
 {
-    Console.WriteLine("Intente su contraseña (123456) ");
-    contra = Console.ReadLine();
+    Console.WriteLine(i);
+    i += 3;
 }
-Console.WriteLine("Contraseña correcta");
