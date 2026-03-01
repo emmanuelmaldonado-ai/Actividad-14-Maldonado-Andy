@@ -1,8 +1,8 @@
-﻿// Mostrar los múltiplos de 3 menores a 50.
+﻿// secuencia que aumente de 5 en 5 hasta 100.
 
-int i = 3;
-while (i < 50)
+int i = 5;
+while (i <= 100)
 {
     Console.WriteLine(i);
-    i += 3;
+    i += 5;
 }
